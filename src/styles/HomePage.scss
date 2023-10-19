@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Nosifer&family=Noto+Sans+Georgian:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.homepage-container {
+    & {
+        height: 100%;
+        width: 100%;
+    } 
+    .title-description-desktop {
+        & { display: flex; align-items: center; justify-content: start; gap: 15%; padding: 36px 0; }
+        .title {
+            & { font-size: 30px; font-weight: 700; width: 100%; font-family: 'Noto Sans Georgian', sans-serif; }
+        }
+        .description {
+            & { display: flex; width: 100%; align-items: center; justify-content: center; }
+        }
+        .description-list { 
+            & { display: flex; flex-direction: column; height: 50%; width: 60%; align-items: start; gap: 12px;font-family: 'Roboto', sans-serif; color: #c0c0c0; }
+            select {
+                & { background-color: #161616; color: #ffffff; height: 32px; border-top: #ffffff; border-left: #ffffff; border-right: #ffffff; gap: 8px; outline: none; }
+                #product-categories {
+                    & { gap: 8px; }
+                }
+            }
+        } 
+        .shop-now {
+            & { height: 42px; width: 112px; background-color: #161616; color: #ffffff;  border-radius: 49px; cursor: pointer; }
+            button {
+                & { height: 42px; width: 112px; background-color: #161616; color: #ffffff; border: 1px solid #727272; border-radius: 49px; cursor: pointer; }
+            }
+        }
+    }
+    .title-description-mobile {
+        & { display: none; }
+    }
+
+    .tagline {
+        & { padding: 5%; text-align: center; font-family: 'Noto Sans Georgian', sans-serif; font-weight: 700; }
+    }
+    hr {
+        & { border-top: 1px solid #727272; border-bottom: 1px solid #727272; border-left: 1px solid #727272; border-right: 1px solid #727272; }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        padding: 1rem;
+    }
+    .title-description-desktop {
+        & { display: flex; flex-direction: column;  }
+    }
+    .homepage-container .title-description-desktop .description {flex-direction: column; text-align: start; justify-content: center; gap: 24px; padding: 0; }
+    .homepage-container .title-description-desktop .description-list { width: 100%;  }
+    .homepage-container .title-description-desktop .title h1 {font-size: 32px;}
+    .homepage-container .title-description-desktop .description-list select {width: 100%;}
+    .homepage-container .title-description-desktop .shop-now {width: 100%;}
+    .homepage-container .tagline{font-size: 24px; width: 100%; text-align: start;}
+    .products-container .product-data {display: flex; flex-direction: column;}
+    .products-container .product-info{display: flex; flex-direction: column; padding: 0;}
+    .products-container .product-info .product-title h1 {font-size: 32px !important; padding-bottom: 24px 0;}
+    .products-container .product-info .product-description {font-size: 16px; text-align: start; padding:0 !important; }
+    .products-container .product-info .product-description p {line-height: 36px;}
+    .products-container .product-data .product {padding-top: 24px;}
+    .products-container .product-data .product p{line-height: 36px;}
+    .products-container hr {margin-top:48px; margin-bottom: 0;}
+
+}

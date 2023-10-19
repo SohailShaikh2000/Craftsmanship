@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+.about-container {
+    & { display: flex; background-color: #161616; align-items: center; justify-content: space-between; padding: 36px 0; }
+    .about-us {
+       & { display: flex; flex-direction: column; gap: 24px; width: 18%; }
+       h2 { 
+        & { font-size: 24px; font-family: 'Nosifer', sans-serif; }
+       }
+       p {
+       & { font-family: 'Roboto', sans-serif; font-weight: 500; color: #C0C0C0;}
+       }
+       .icons {
+        & { display: flex; gap: 24px; }
+        img {
+            & { cursor: pointer; }
+        }
+       }
+    }
+    .contact-support {
+        & { display: flex; flex-direction: column; gap: 24px; font-family: 'Roboto', sans-serif; font-weight: 500; }
+        p {
+            & { cursor: pointer; }
+        }
+    }
+    .privacy-terms {
+        & { display: flex; flex-direction: column; font-family: 'Roboto', sans-serif; font-weight: 500; gap: 38px; }
+        p {
+            & { cursor: pointer; }
+        }
+    }
+    .feedback {
+        & { display: flex; flex-direction: column; font-family: 'Roboto', sans-serif; font-weight: 500; }
+        p {
+            & { padding-bottom: 18px; }
+        }
+        .email-input {
+            & { display: flex; gap: 8px; }
+            input {
+                & { border: none; outline: none; color: #ffffff; padding-bottom: 4px; }
+            }
+        }
+    }
+    hr{margin: 12px 0;}
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        padding: 1rem;
+    }
+    .about-container {
+        & { display: flex; flex-direction: column;  }
+    }
+    .about-container .about-us {width: 100%;}
+    .about-container .about-us p{font-weight: 500; color: #C0C0C0;}
+    .about-container .contact-support{align-items: start;justify-content: start; width: 100%; padding: 24px 0;}
+    .about-container .privacy-terms {align-items: start;justify-content: start;width: 100% ;}
+    .about-container .feedback {align-items: start;justify-content: start;width: 100%;}
+    .about-container .feedback .email-input {width: 100%;}
+    .about-container .feedback .email-input input {width: 100%;}
+    .about-container hr {margin: 24px 0; width: 100%;}
+}
